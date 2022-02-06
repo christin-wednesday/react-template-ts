@@ -7,7 +7,7 @@
 import React from 'react';
 // import { fireEvent } from '@testing-library/dom'
 import { renderWithIntl } from '@utils/testUtils';
-import RepoCard from '../index';
+import RepoCard from '../index.tsx';
 import { translate } from '@app/components/IntlGlobalProvider/index';
 
 describe('<RepoCard />', () => {

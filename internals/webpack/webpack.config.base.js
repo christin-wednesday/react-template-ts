@@ -35,7 +35,7 @@ module.exports = (options) => ({
   module: {
     rules: [
       {
-        test: /\.jsx?$/, // Transform all .js and .jsx files required somewhere with Babel
+        test: /\.(t|j)sx?$/, // Transform all .js and .jsx files required somewhere with Babel
         exclude: /node_modules/,
         use: [
           {
@@ -170,7 +170,7 @@ module.exports = (options) => ({
       moment$: path.resolve(__dirname, '../../node_modules/moment/moment.js'),
       '@ant-design/icons/lib/dist$': path.resolve(__dirname, './app/icons.js')
     },
-    extensions: ['.js', '.jsx', '.react.js'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.react.js'],
     mainFields: ['browser', 'jsnext:main', 'main']
   },
   devtool: options.devtool,
