@@ -1,7 +1,7 @@
 {
   "name": "react-template",
   "version": "1.0.0",
-  "description": "A template react application",
+  "description": "A template react application with TypeScript support",
   "repository": {
     "type": "git",
     "url": "git://github.com/wednesday-solutions/react-template.git"
@@ -96,9 +96,9 @@
     "prop-types": "15.7.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-helmet": "6.0.0-beta",
+    "react-helmet": "6.1.0",
     "react-intl": "5.20.3",
-    "react-redux": "7.0.2",
+    "react-redux": "7.2.6",
     "react-router-dom": "^5.1.2",
     "react-screentype-hook": "^1.0.15",
     "redux": "4.0.1",
@@ -199,7 +199,6 @@
     "react-testing-library": "6.1.2",
     "rimraf": "2.6.3",
     "shelljs": "0.8.3",
-    "source-map-loader": "^3.0.1",
     "storybook-addon-intl": "^2.4.1",
     "storybook-addon-smart-knobs": "^5.0.0",
     "storybook-router": "^0.3.4",
