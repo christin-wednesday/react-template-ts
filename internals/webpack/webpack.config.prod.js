@@ -126,7 +126,7 @@ module.exports = require('./webpack.config.base')({
       ]
     })
   ],
-  devtool: 'source-map',
+  devtool: 'eval-cheap-module-source-map',
   performance: {
     assetFilter: (assetFilename) => !/(\.map$)|(^(main\.|favicon\.))/.test(assetFilename)
   }

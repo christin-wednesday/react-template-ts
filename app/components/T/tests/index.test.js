@@ -6,7 +6,7 @@
 
 import React from 'react';
 import { renderWithIntl, getComponentStyles } from '@utils/testUtils';
-import { T } from '../index';
+import { T } from '../index.tsx';
 
 describe('<T /> component tests', () => {
   it('should render and match the snapshot', () => {

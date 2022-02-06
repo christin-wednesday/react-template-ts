@@ -27,7 +27,7 @@ module.exports = (options) => ({
       // Compile into js/build.js
       path: path.resolve(process.cwd(), 'build'),
       // to run prod build locally, set public path to '/' instead of '/react-template/'
-      publicPath: process.env.NODE_ENV === 'production' ? '/react-template/' : '/'
+      publicPath: /* process.env.NODE_ENV === 'production' ? '/react-template/' :  */ '/'
     },
     options.output
   ), // Merge with env dependent settings
@@ -39,13 +39,13 @@ module.exports = (options) => ({
         exclude: /node_modules/,
         use: [
           {
-            loader: 'ts-loader',
+            loader: 'babel-loader',
             options: options.babelQuery
           }
         ]
       },
       // add source-map support
-      { enforce: 'pre', test: /\.js$/, exclude: /node_modules/, loader: 'source-map-loader' },
+      // { enforce: 'pre', test: /\.js$/, exclude: /node_modules/, loader: 'source-map-loader' },
       {
         // Preprocess our own .css files
         // This is the place to add your own loaders (e.g. sass/less etc.)
